@@ -1,7 +1,8 @@
 var http= require("http");
 
 var manejador = function(solicitud, respuesta){
-console.log("Hola Mundo");
+console.log("Recibimos una nueva Solicitud");
+respuesta.end("Hola Mundo");
 }
 
 var servidor= http.createServer(manejador);
